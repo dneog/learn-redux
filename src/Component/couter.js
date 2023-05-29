@@ -2,8 +2,8 @@ import { useState } from "react";
 import {useSelector, useDispatch} from 'react-redux';
 const Counter = () => {
 
-  const count= useSelector((state) => state.count)
-  const isLoggedIn= useSelector((state) => state.isLoggedIn)
+  const count= useSelector((state) => state)
+ 
   const dispatch= useDispatch()
   const handleSubtract = () => {
    dispatch({
@@ -11,8 +11,6 @@ const Counter = () => {
 
    })
   };
-  
-  
   const handleAdd = () => {
     dispatch({
       type: 'ADD',
