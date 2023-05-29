@@ -11,23 +11,14 @@ const Counter = () => {
 
    })
   };
-  const handleReset = () => {
-     dispatch({
-    type: 'RESET',
-    
-   })
-  };
+  
+  
   const handleAdd = () => {
     dispatch({
       type: 'ADD',
     })
   };
-  const handleAddNumber = (amount) => {
-    dispatch({
-      type: 'ADD_NUMBER',
-      payload: amount
-    })
-  };
+ 
   
 
   
@@ -49,15 +40,11 @@ const Counter = () => {
           <button  onClick={handleSubtract}>
             Subtract
           </button>
-          <button  onClick={handleReset}>
-            Reset
-          </button>
+          
           <button  onClick={handleAdd}>
             Add
           </button>
-          <button  onClick={()=> handleAddNumber(5)}>
-            Add 5
-          </button>
+          
         </div>
 
         </>
