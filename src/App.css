@@ -1,10 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    background: #00154f;
+}
+
+
 .section{
-    width: 50%;
+    width: 40%;
     margin: auto;
     text-align: center;
+    background: #f3f3f3;
+   
 }
 button{
     padding: 5px;
     margin: 5px;
    
+}
+.count{
+    font-size: 28px;
+   margin-bottom: 0;
+   padding-top: 5px;
+}
+.h1{
+    font-size: 30px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    padding: 10px;
+    border-bottom: 1px solid #6e6e6e;
+    margin-bottom: 15px;
+    color: #d9d9d9;
+
+}
+.prod{
+    display: flex;
+    gap: 30px;
+    font-size: 22px;
+}
+.but{
+    margin-top: 0;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    background: #f7f7f7;
+    padding: 10px;
+    margin: 20px auto;
+}
+.login2{
+    text-align: center;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    background: #f7f7f7;
+    padding: 15px;
+    margin: 20px auto;
+}
+input{
+    padding: 6px;
+    margin: 3px;
+}
+.but2{
+
 }

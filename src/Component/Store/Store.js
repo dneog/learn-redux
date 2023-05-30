@@ -16,8 +16,18 @@ const countReducer= (state = 0, action)=> {
     return state
 }
 
+const authReducer= (state= true, action)=> {
+    if(action.type=== 'TOGGLE'){
+        return state= !state
+    }
+    return state
+}
 
+const reducers= combineReducers({
+    count: countReducer,
+    isLoggedIn: authReducer
+})
 
-const store = createStore(countReducer)
+const store = createStore(reducers)
 
 export default store ;
